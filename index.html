@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квест: Цифровой Замок Хогвартс</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .question-container {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .question-container h3 {
+            margin-bottom: 20px;
+        }
+        .answer-btn {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .answer-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Добро пожаловать в квест: Цифровой Замок Хогвартс!</h1>
+    
+    <div id="question-1" class="question-container">
+        <h3>Загадка 1: Какое заклинание Гермиона использовала для того, чтобы создать многократные версии себя, чтобы сдать экзамены в Хогвартсе?</h3>
+        <button class="answer-btn" onclick="checkAnswer(1, 'Дупликарум')">Дупликарум</button>
+        <button class="answer-btn" onclick="checkAnswer(1, 'Эффидус')">Эффидус</button>
+        <button class="answer-btn" onclick="checkAnswer(1, 'Дискьери')">Дискьери</button>
+    </div>
+
+    <div id="question-2" class="question-container" style="display: none;">
+        <h3>Загадка 2: Кто был мастером Квай-Гона Джина, который обучил его искусству управления силой?</h3>
+        <button class="answer-btn" onclick="checkAnswer(2, 'Тоггаран')">Тоггаран</button>
+        <button class="answer-btn" onclick="checkAnswer(2, 'Оби-Ван Кеноби')">Оби-Ван Кеноби</button>
+        <button class="answer-btn" onclick="checkAnswer(2, 'Дарт Плагус')">Дарт Плагус</button>
+    </div>
+
+    <div id="question-3" class="question-container" style="display: none;">
+        <h3>Загадка 3: Как называется планета, на которой Мандалорец встречает Грогу и пытается вернуть его к джедаям?</h3>
+        <button class="answer-btn" onclick="checkAnswer(3, 'Набу')">Набу</button>
+        <button class="answer-btn" onclick="checkAnswer(3, 'Татуин')">Татуин</button>
+        <button class="answer-btn" onclick="checkAnswer(3, 'Соскин')">Соскин</button>
+    </div>
+
+    <div id="question-4" class="question-container" style="display: none;">
+        <h3>Загадка 4: Как назывался магический предмет, который использовался для защиты от смертоносных проклятий в 'Гарри Поттер и Орден Феникса'?</h3>
+        <button class="answer-btn" onclick="checkAnswer(4, 'Зеркало Судьбы')">Зеркало Судьбы</button>
+        <button class="answer-btn" onclick="checkAnswer(4, 'Щит Дамблдора')">Щит Дамблдора</button>
+        <button class="answer-btn" onclick="checkAnswer(4, 'Проклятое зеркало')">Проклятое зеркало</button>
+    </div>
+
+    <div id="question-5" class="question-container" style="display: none;">
+        <h3>Загадка 5: Какое оружие использовал Йода в битве с Дартом Сидиусом?</h3>
+        <button class="answer-btn" onclick="checkAnswer(5, 'Лазерный меч')">Лазерный меч</button>
+        <button class="answer-btn" onclick="checkAnswer(5, 'Световой кинжал')">Световой кинжал</button>
+        <button class="answer-btn" onclick="checkAnswer(5, 'Электрическая пушка')">Электрическая пушка</button>
+    </div>
+
+    <div id="question-6" class="question-container" style="display: none;">
+        <h3>Загадка 6: Какую технологию использует Мандалорец для создания энергетического поля, чтобы защитить себя от повреждений?</h3>
+        <button class="answer-btn" onclick="checkAnswer(6, 'Т
